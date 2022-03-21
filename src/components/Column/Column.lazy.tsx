@@ -4,7 +4,7 @@ const LazyColumn = lazy(() => import('./Column'));
 
 const Column = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyColumn text='Lazy Column' {...props} />
+    <LazyColumn text='Column Loading' {...props} />
   </Suspense>
 );
 

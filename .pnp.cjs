@@ -64,6 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:17.0.40"],\
             ["@types/react-dom", "npm:17.0.13"],\
+            ["@types/react-redux", "npm:7.1.23"],\
             ["@types/styled-components", "npm:5.1.24"],\
             ["@typescript-eslint/eslint-plugin", "virtual:c079f75ec5867c0f3e9899716ea4979e87dc7a489b2a7c32e94e8bc2882cb9cec7f2b533aa9a0bdec9000804bebb99da285a2e01bb0d20e7676347b1cf92ba17#npm:5.15.0"],\
             ["@typescript-eslint/parser", "virtual:c079f75ec5867c0f3e9899716ea4979e87dc7a489b2a7c32e94e8bc2882cb9cec7f2b533aa9a0bdec9000804bebb99da285a2e01bb0d20e7676347b1cf92ba17#npm:5.15.0"],\
@@ -18131,6 +18132,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.26"],\
             ["@types/react", "npm:17.0.40"],\
             ["@types/react-dom", "npm:17.0.13"],\
+            ["@types/react-redux", "npm:7.1.23"],\
             ["@types/styled-components", "npm:5.1.24"],\
             ["@typescript-eslint/eslint-plugin", "virtual:c079f75ec5867c0f3e9899716ea4979e87dc7a489b2a7c32e94e8bc2882cb9cec7f2b533aa9a0bdec9000804bebb99da285a2e01bb0d20e7676347b1cf92ba17#npm:5.15.0"],\
             ["@typescript-eslint/parser", "virtual:c079f75ec5867c0f3e9899716ea4979e87dc7a489b2a7c32e94e8bc2882cb9cec7f2b533aa9a0bdec9000804bebb99da285a2e01bb0d20e7676347b1cf92ba17#npm:5.15.0"],\
