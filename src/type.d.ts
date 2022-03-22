@@ -1,4 +1,4 @@
-type LayerDescriptionType = {
+type LayerDescription = {
   id: string,
   owner: string,
   created: number,
@@ -42,32 +42,32 @@ type LayerDescriptionType = {
   contentOrigin: string
 }
 
-type LayerQueryResponseType = {
+type LayerQueryResponse = {
   query: string,
   total: number,
   start: number,
   num: number,
   nextStart: number
-  results: LayerDescriptionType[]
+  results: LayerDescription[]
 }
 
 type PopulateListAction = {
   type: string
   payload: {
-    layers: LayerDescriptionType
+    layers: LayerDescription
   }
 }
 type AddItemAction = {
   type: string
   payload: {
-  layer: LayerDescriptionType
+  layer: LayerDescription
   }
 }
 
 type ListAction = PopulateListAction
 
 type ListState = {
-  layers: LayerDescriptionType[]
+  layers: LayerDescription[]
 }
 
 type DispatchType = (args: ListAction) => ListAction

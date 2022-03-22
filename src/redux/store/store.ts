@@ -1,9 +1,13 @@
-import {createStore, applyMiddleware} from 'redux'
-import thunk from 'redux-thunk'
-import reducer from '../reducers/reducer'
-import {composeWithDevTools} from '@redux-devtools/extension/src/logOnlyInProduction'
+import { configureStore } from '@reduxjs/toolkit'
+import { setupListeners } from '@reduxjs/toolkit/query'
+import {  layerApi } from '../portalinterface'
 
-const middleware = [thunk]
+export const store = configureStore({
+  reducer: {
+    [layerApi.reducerPath]: layerApi.reducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(layerApi.middleware)
+})
 
-const store = createStore(reducer, composeWithDevTools(applyMiddleware(...middleware)))
-export default store
+setupListeners(store.dispatch)

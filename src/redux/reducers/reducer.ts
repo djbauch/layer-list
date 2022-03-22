@@ -1,7 +1,7 @@
 import { ADDLAYER, POPULATELAYERS } from "../actions/actions";
 
 const initialState = {
-  layers : [] as Array<LayerDescriptionType>
+  layers : [] as Array<LayerDescription>
 }
 const reducer = (state: ListState = initialState, action: ListAction): ListState => {
   switch (action.type) {

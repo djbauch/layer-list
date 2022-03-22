@@ -2262,6 +2262,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@reduxjs/toolkit@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "@reduxjs/toolkit@npm:1.8.0"
+  dependencies:
+    immer: ^9.0.7
+    redux: ^4.1.2
+    redux-thunk: ^2.4.1
+    reselect: ^4.1.5
+  peerDependencies:
+    react: ^16.9.0 || ^17.0.0 || 18.0.0-beta
+    react-redux: ^7.2.1 || ^8.0.0-beta
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-redux:
+      optional: true
+  checksum: e229571b80d7f5c4407af2050ac2a26a22472541fef1705d5e8b73b93bfb2884072d79e1cea2cd81d89939cc6b6073ef3ddf1680950aac66ba34cd202a6cf371
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.3.1
   resolution: "@rollup/plugin-babel@npm:5.3.1"
@@ -12360,6 +12380,7 @@ __metadata:
     "@jest/types": ^27.5.1
     "@mdx-js/react": ^1.6.22
     "@redux-devtools/extension": ^3.2.2
+    "@reduxjs/toolkit": ^1.8.0
     "@storybook/addon-actions": ^6.5.0-alpha.49
     "@storybook/addon-docs": ^6.5.0-alpha.49
     "@storybook/addon-essentials": ^6.5.0-alpha.49
@@ -16291,6 +16312,13 @@ __metadata:
   version: 1.0.0
   resolution: "requires-port@npm:1.0.0"
   checksum: eee0e303adffb69be55d1a214e415cf42b7441ae858c76dfc5353148644f6fd6e698926fc4643f510d5c126d12a705e7c8ed7e38061113bdf37547ab356797ff
+  languageName: node
+  linkType: hard
+
+"reselect@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "reselect@npm:4.1.5"
+  checksum: 54c13c1e795b2ea70cba8384138aebe78adda00cbea303cc94b64da0a70d74c896cc9a03115ae38b8bff990e7a60dcd6452ab68cbec01b0b38c1afda70714cf0
   languageName: node
   linkType: hard
 
