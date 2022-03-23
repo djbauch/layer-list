@@ -49,11 +49,14 @@ This component will fetch data according to the ArcGIS Enterprise REST Search se
 
 
  An example request from the mapviewer application after its initialization, a request to pull in the available layers looks like this:
+https://arcgis.com/sharing/rest/search?q=boulder&f=json
 
-https://djbauch.maps.arcgis.com/sharing/rest/search?f=json&q=NGA%20((type%3A%22Map%20Service%22%20OR%20type%3A%22Image%20Service%22%20OR%20type%3A%22Feature%20Service%22%20OR%20type%3A%22Vector%20Tile%20Service%22%20OR%20type%3A%22OGCFeatureServer%22%20OR%20type%3A%22WMS%22%20OR%20type%3A%22WFS%22%20OR%20type%3A%22WMTS%22%20OR%20type%3A%22KML%22)%20AND%20(-type%3A%22KML%20Collection%22))%20%20(-type%3A%22Feature%20Collection%20Template%22%20AND%20-type%3A%22Stream%20Service%22%20AND%20-type%3A%22Feature%20Collection%22%20AND%20-typekeywords%3A%22Elevation%203D%20Layer%22%20AND%20-typekeywords%3A%22Table%22%20AND%20-typekeywords%3A%22Route%20Layer%22%20AND%20-type%3A%22Feed%22)&num=16&sortOrder=desc&start=1&token=... an API Key or OAuth 2.0 token goes here ...
+A more complicated example is:
+[Complicated Query](
+https://djbauch.maps.arcgis.com/sharing/rest/search?f=json&q=NGA%20((type%3A%22Map%20Service%22%20OR%20type%3A%22Image%20Service%22%20OR%20type%3A%22Feature%20Service%22%20OR%20type%3A%22Vector%20Tile%20Service%22%20OR%20type%3A%22OGCFeatureServer%22%20OR%20type%3A%22WMS%22%20OR%20type%3A%22WFS%22%20OR%20type%3A%22WMTS%22%20OR%20type%3A%22KML%22)%20AND%20(-type%3A%22KML%20Collection%22))%20%20(-type%3A%22Feature%20Collection%20Template%22%20AND%20-type%3A%22Stream%20Service%22%20AND%20-type%3A%22Feature%20Collection%22%20AND%20-typekeywords%3A%22Elevation%203D%20Layer%22%20AND%20-typekeywords%3A%22Table%22%20AND%20-typekeywords%3A%22Route%20Layer%22%20AND%20-type%3A%22Feed%22)&num=16&sortOrder=desc&start=1) ...
 
 Decoding that URL, here's the human-readable equivalent:
 
 https://djbauch.maps.arcgis.com/sharing/rest/search?f=json&q=NGA ((type:"Map Service" OR type:"Image Service" OR type:"Feature Service" OR type:"Vector Tile Service" OR type:"OGCFeatureServer" OR type:"WMS" OR type:"WFS" OR type:"WMTS" OR type:"KML") AND (-type:"KML Collection"))  (-type:"Feature Collection Template" AND -type:"Stream Service" AND -type:"Feature Collection" AND -typekeywords:"Elevation 3D Layer" AND -typekeywords:"Table" AND -typekeywords:"Route Layer" AND -type:"Feed")&num=16&sortOrder=desc&start=1&token=... an API Key or OAuth 2.0 token goes here ...
 
-The portal interface will be accessed by the application using an API slice with auto-generated React hooks that can be used in a component file. RTK Query will automatically fetch data on mount, see the Redux Toolkit (RTK) documentation at [Redux Toolkit Overview](https://redux-toolkit.js.org/rtk-query/overview).
+The portal interface will be accessed by the application using an API slice with auto-generated React hooks that can be used in a component file. RTK Query will automatically fetch data on mount, see the Redux Toolkit (RTK) documentation at [Redux Toolkit Usage](https://redux-toolkit.js.org/usage/usage-guide) and [RTK Query Overview](https://redux-toolkit.js.org/rtk-query/overview).
