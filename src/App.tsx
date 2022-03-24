@@ -9,8 +9,6 @@ const App = () => {
   return (
     <AppContainer>
       <Column text='Layers'>
-        <LayerCard>1st Card</LayerCard>
-        <LayerCard>2nd Card</LayerCard>
       </Column>
     </AppContainer>
   );

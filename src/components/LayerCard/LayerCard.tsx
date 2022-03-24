@@ -2,11 +2,11 @@ import React, {FC} from 'react';
 import styles from './LayerCard.module.css';
 import {LayerCardContainer } from '../StyledComponents'
 
-type LayerCardProps = { text: string}
+type LayerCardProps =  LayerDescription
 
-const LayerCard: React.FC = ({children}) => (
+const LayerCard: FC<LayerCardProps> = (cardProps: LayerCardProps) => (
   <div className={styles.LayerCard}>
-    <LayerCardContainer>{children}</LayerCardContainer>
+    <LayerCardContainer>{cardProps.snippet}</LayerCardContainer>
   </div>
 );
 

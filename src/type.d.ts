@@ -3,8 +3,8 @@ type LayerDescription = {
   owner: string,
   created: number,
   modified: number,
-  guid: string,
-  name: string,
+  guid: string | null,
+  name: string | null,
   title: string,
   type: string,
   typeKeywords: string[],
@@ -13,22 +13,22 @@ type LayerDescription = {
   snippet: string,
   thumbnail: string,
   documentation: string | null,
-  extent: [[number, number], [number, number]],
+  extent: number[][],
   categories: string[]
-  spatialReference: string,
+  spatialReference: string | null,
   accessInformation: string,
   licenseInfo: string,
   culture: string,
-  properties: string[] | null,
+  properties: object | null,
   advancedSettings: string[] | null,
-  url: string,
+  url: string | null,
   proxyFilter: string | null,
   access: string,
   size: number,
   subInfo: number,
   appCategories: string[],
-  industries: [],
-  languages: [],
+  industries: string[],
+  languages: string[],
   largeThumbnail: string | null,
   banner: string | null,
   screenshots: string[],
@@ -39,7 +39,7 @@ type LayerDescription = {
   numViews: number,
   scoreCompleteness: number,
   groupDesignations: string | null,
-  contentOrigin: string
+  contentOrigin?: string
 }
 
 type LayerQueryResponse = {
