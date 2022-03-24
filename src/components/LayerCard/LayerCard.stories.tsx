@@ -5,7 +5,7 @@ export default {
   title: "LayerCard",
 };
 
-export const Default = () => <LayerCard text='No Card Text' />;
+export const Default = () => <LayerCard/>;
 
 Default.story = {
   name: 'default',

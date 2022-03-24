@@ -12,6 +12,7 @@ const qs = 'search?f=json&q=NGA%20((type%3A%22Map%20Service'+
 
 const baseUrl = 'https://arcgis.com/sharing/rest/'
 const simpleSearch = 'search?q=boulder&f=json'
+
 export const layerApi = createApi({
   reducerPath: 'layerApi',
   baseQuery: fetchBaseQuery( {baseUrl: baseUrl}),

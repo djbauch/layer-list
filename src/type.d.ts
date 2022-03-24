@@ -51,6 +51,9 @@ type LayerQueryResponse = {
   results: LayerDescription[]
 }
 
+type LayerCardState = {
+  cards: LayerDescription
+}
 type PopulateListAction = {
   type: string
   payload: {

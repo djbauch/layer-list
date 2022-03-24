@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import { AppContainer, ColumnContainer, LayerCardContainer } from './components/StyledComponents'
+import { AppContainer } from './components/StyledComponents'
+import LayerCard  from './components/LayerCard/LayerCard'
 import Column from './components/Column/Column'
 import AddItem from './components/AddItem/AddItem'
-function App() {
+
+const App = () => {
   return (
     <AppContainer>
       <Column text='Layers'>
-        <LayerCardContainer>1st Card</LayerCardContainer>
-        <LayerCardContainer>2nd Card</LayerCardContainer>
+        <LayerCard>1st Card</LayerCard>
+        <LayerCard>2nd Card</LayerCard>
       </Column>
     </AppContainer>
   );

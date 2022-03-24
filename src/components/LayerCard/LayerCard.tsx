@@ -1,12 +1,12 @@
-import React, { FC } from 'react';
+import React, {FC} from 'react';
 import styles from './LayerCard.module.css';
 import {LayerCardContainer } from '../StyledComponents'
 
-interface LayerCardProps { text: string}
+type LayerCardProps = { text: string}
 
-const LayerCard: FC<LayerCardProps> = ({text}: LayerCardProps) => (
+const LayerCard: React.FC = ({children}) => (
   <div className={styles.LayerCard}>
-    <LayerCardContainer>{text}</LayerCardContainer>
+    <LayerCardContainer>{children}</LayerCardContainer>
   </div>
 );
 
