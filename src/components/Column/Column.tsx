@@ -3,7 +3,8 @@ import AddItem from '../AddItem/AddItem';
 import { ColumnContainer, ColumnLabel, LayerCardContainer } from '../StyledComponents';
 import LayerCard from '../LayerCard/LayerCard'
 import styles from './Column.module.css';
-import testData from '../../stories/bouldertest.json'
+//import testData from '../../stories/bouldertest.json'
+import testData from '../../stories/bigquery.json'
 import { useGetAllLayersQuery } from '../../redux/portalinterface'
 interface ColumnProps {
   text: string
