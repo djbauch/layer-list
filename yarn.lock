@@ -5,6 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@a11y/focus-trap@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@a11y/focus-trap@npm:1.0.5"
+  checksum: aa5dbdcbfa0ce2de0a9778c1696a67c25ce28e06126079bb8c302a97fbffe620608a4fc0038a3ee0c0cfbbd4dc7fdafe029353e7aa06b0e5fdf9da69b0008b6b
+  languageName: node
+  linkType: hard
+
 "@ampproject/remapping@npm:^2.1.0":
   version: 2.1.2
   resolution: "@ampproject/remapping@npm:2.1.2"
@@ -24,6 +31,21 @@ __metadata:
   peerDependencies:
     ajv: ">=8"
   checksum: 2d9ffaa422ebb47745d708b7aaa93daa68fe6598ee6ef790f541d6b70f73ed8bb3469e320d892ab69c9433464cb70f483f1a32d5142a48723266c52c75d72981
+  languageName: node
+  linkType: hard
+
+"@arcgis/core@npm:^4.23.1":
+  version: 4.23.1
+  resolution: "@arcgis/core@npm:4.23.1"
+  dependencies:
+    "@esri/arcgis-html-sanitizer": ~2.9.0
+    "@esri/calcite-colors": ~6.0.1
+    "@esri/calcite-components": 1.0.0-beta.77
+    "@popperjs/core": ~2.11.4
+    focus-trap: ~6.7.3
+    luxon: ~2.3.1
+    sortablejs: ~1.14.0
+  checksum: 7334e7093d3fb61943eb5efce26c7adbd80baf00b6914a19423b0d5e58fd08ce100d31faefa9f30a813191a4ef4b0e506d3805769a6e52bf9cdf6cdfa670dbf7
   languageName: node
   linkType: hard
 
@@ -1799,6 +1821,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esri/arcgis-html-sanitizer@npm:~2.9.0":
+  version: 2.9.0
+  resolution: "@esri/arcgis-html-sanitizer@npm:2.9.0"
+  dependencies:
+    lodash.isplainobject: ^4.0.6
+    xss: ^1.0.10
+  checksum: 28fc1f02125a350e05a88435533ba272a7608e8dbf5aef2ba04533bc137512ed0ad6164a775229fe79943a293d23acaee4d9e4ec74bb03ec8fef30393a9c2eda
+  languageName: node
+  linkType: hard
+
+"@esri/calcite-colors@npm:~6.0.1":
+  version: 6.0.1
+  resolution: "@esri/calcite-colors@npm:6.0.1"
+  checksum: 09033f4a3c0928b902960ff0c93306b9a1e688ae000275cb64269f82703ee9422b1356d84aa4192985b3755d8bb3ae962088146c732f487f26bef97748b6155d
+  languageName: node
+  linkType: hard
+
+"@esri/calcite-components@npm:1.0.0-beta.77":
+  version: 1.0.0-beta.77
+  resolution: "@esri/calcite-components@npm:1.0.0-beta.77"
+  dependencies:
+    "@a11y/focus-trap": 1.0.5
+    "@popperjs/core": 2.11.2
+    "@stencil/core": 2.13.0
+    "@types/color": 3.0.3
+    color: 4.2.0
+    form-request-submit-polyfill: 2.0.0
+    lodash-es: 4.17.21
+    sortablejs: 1.14.0
+  checksum: 44a0fe971cb0eb36a1e604f54072258cc82bbbe67db8fd4d0c41c09d8614b2e94c495f2ee2b6706175c6812a1ea3e998923b3b821d496d357fbc85239d5b0c90
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -2251,6 +2306,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:2.11.2":
+  version: 2.11.2
+  resolution: "@popperjs/core@npm:2.11.2"
+  checksum: 5695bf020eda54636e16a62dc9b5fdd92beaf7b2d19f62fcef049d57c5cff92773562d80cbf760b217c3ec928da310eb24994ab6a00fd39dffa0af9b5dfc01a6
+  languageName: node
+  linkType: hard
+
+"@popperjs/core@npm:~2.11.4":
+  version: 2.11.4
+  resolution: "@popperjs/core@npm:2.11.4"
+  checksum: 36168d274aa164368a50aef2e7b2f858e1b9145d9250af9dc1315ff719d874a367177760f8285efb75c8cf48267194a50e7dc9cdb41bf0b1958c38805c13564c
+  languageName: node
+  linkType: hard
+
 "@redux-devtools/extension@npm:^3.2.2":
   version: 3.2.2
   resolution: "@redux-devtools/extension@npm:3.2.2"
@@ -2362,6 +2431,15 @@ __metadata:
   dependencies:
     "@sinonjs/commons": ^1.7.0
   checksum: 09b5a158ce013a6c37613258bad79ca4efeb99b1f59c41c73cca36cac00b258aefcf46eeea970fccf06b989414d86fe9f54c1102272c0c3bdd51a313cea80949
+  languageName: node
+  linkType: hard
+
+"@stencil/core@npm:2.13.0":
+  version: 2.13.0
+  resolution: "@stencil/core@npm:2.13.0"
+  bin:
+    stencil: bin/stencil
+  checksum: 9ac7fdb7fa90e7b1e40c12820aab9a284c0bcbc1bf80b36dd3324d86ee07a9ece7e0e54231ea3a7210ffa44ece1c285bcb6778c4ac2e8dae041550494a442bf3
   languageName: node
   linkType: hard
 
@@ -4033,6 +4111,31 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: bfcadb042a41b124c4e3de4925e3be6d35b78f93f27c4535d5ff86980dc0f8bc407ed99b9b54528952dc62834d5a779392f7a12c2947dd19330eb05a6bcae15a
+  languageName: node
+  linkType: hard
+
+"@types/color-convert@npm:*":
+  version: 2.0.0
+  resolution: "@types/color-convert@npm:2.0.0"
+  dependencies:
+    "@types/color-name": "*"
+  checksum: 027b68665dc2278cc2d83e796ada0a05a08aa5a11297e227c48c7f9f6eac518dec98578ab0072bd211963d3e4b431da70b20ea28d6c3136d0badfd3f9913baee
+  languageName: node
+  linkType: hard
+
+"@types/color-name@npm:*":
+  version: 1.1.1
+  resolution: "@types/color-name@npm:1.1.1"
+  checksum: b71fcad728cc68abcba1d405742134410c8f8eb3c2ef18113b047afca158ad23a4f2c229bcf71a38f4a818dead375c45b20db121d0e69259c2d81e97a740daa6
+  languageName: node
+  linkType: hard
+
+"@types/color@npm:3.0.3":
+  version: 3.0.3
+  resolution: "@types/color@npm:3.0.3"
+  dependencies:
+    "@types/color-convert": "*"
+  checksum: 4a54a6eca687b1f19d393c6c44e292009e913fa2377b5b815d1cd04470131087d7a799718d9e66a970f43e6ba16e7056a5b40b49d2d0d1d0f1530aff23864528
   languageName: node
   linkType: hard
 
@@ -6992,10 +7095,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-name@npm:^1.1.4, color-name@npm:~1.1.4":
+"color-name@npm:^1.0.0, color-name@npm:^1.1.4, color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
+  languageName: node
+  linkType: hard
+
+"color-string@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "color-string@npm:1.9.0"
+  dependencies:
+    color-name: ^1.0.0
+    simple-swizzle: ^0.2.2
+  checksum: 93c6678b847f8cfa47d19677fd19e1d4b19d7a33f100644400357c298266080b5bca64e5f874fa8ac8cc0aa0606ad44f7a838b4e6fd05e6affea190a68555bb4
   languageName: node
   linkType: hard
 
@@ -7005,6 +7118,16 @@ __metadata:
   bin:
     color-support: bin.js
   checksum: 9b7356817670b9a13a26ca5af1c21615463b500783b739b7634a0c2047c16cef4b2865d7576875c31c3cddf9dd621fa19285e628f20198b233a5cfdda6d0793b
+  languageName: node
+  linkType: hard
+
+"color@npm:4.2.0":
+  version: 4.2.0
+  resolution: "color@npm:4.2.0"
+  dependencies:
+    color-convert: ^2.0.1
+    color-string: ^1.9.0
+  checksum: a5e7d8e8b4cdc3a005da8f0d9a41c63f74c46ab0865d834e950891a5c171141e8e88cbb958a501bd6d80ec57448fee4f630d9910f9533524ea9324e4bc9a3c35
   languageName: node
   linkType: hard
 
@@ -7052,7 +7175,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^2.19.0, commander@npm:^2.20.0":
+"commander@npm:^2.19.0, commander@npm:^2.20.0, commander@npm:^2.20.3":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
   checksum: ab8c07884e42c3a8dbc5dd9592c606176c7eb5c1ca5ff274bcf907039b2c41de3626f684ea75ccf4d361ba004bbaff1f577d5384c155f3871e456bdf27becf9e
@@ -7675,6 +7798,13 @@ __metadata:
   bin:
     cssesc: bin/cssesc
   checksum: f8c4ababffbc5e2ddf2fa9957dda1ee4af6048e22aeda1869d0d00843223c1b13ad3f5d88b51caa46c994225eacb636b764eb807a8883e2fb6f99b4f4e8c48b2
+  languageName: node
+  linkType: hard
+
+"cssfilter@npm:0.0.10":
+  version: 0.0.10
+  resolution: "cssfilter@npm:0.0.10"
+  checksum: bc2c52bbb3426c3f2e4832edb6f8573e6cfa65b40b540932762d1e018f0f0157725e2991b77344bbc8266c6bbf4daa2803b0707cfb1bd0877505bf83a68e4b04
   languageName: node
   linkType: hard
 
@@ -9524,6 +9654,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"focus-trap@npm:~6.7.3":
+  version: 6.7.3
+  resolution: "focus-trap@npm:6.7.3"
+  dependencies:
+    tabbable: ^5.2.1
+  checksum: 900c8fe94a7e0bcda7f0bf2c86dff174e997a1101f685833484cde721c8893729260b7a9f1f2c3a2c8560f5f84c332ba7d45695c7d4862f8f9340f6caceace3a
+  languageName: node
+  linkType: hard
+
 "follow-redirects@npm:^1.0.0":
   version: 1.14.9
   resolution: "follow-redirects@npm:1.14.9"
@@ -9605,6 +9744,13 @@ __metadata:
     combined-stream: ^1.0.8
     mime-types: ^2.1.12
   checksum: b019e8d35c8afc14a2bd8a7a92fa4f525a4726b6d5a9740e8d2623c30e308fbb58dc8469f90415a856698933c8479b01646a9dff33c87cc4e76d72aedbbf860d
+  languageName: node
+  linkType: hard
+
+"form-request-submit-polyfill@npm:2.0.0":
+  version: 2.0.0
+  resolution: "form-request-submit-polyfill@npm:2.0.0"
+  checksum: c6a6365599dc97bd681a2e4e6f2d856719db8b8e0f5e93f8ada4fc39b79f79e88bdd58d27bc1b7eeba0b98e669da77112f20906d287c1a7b40e3450385e80330
   languageName: node
   linkType: hard
 
@@ -10894,6 +11040,13 @@ __metadata:
   version: 0.2.1
   resolution: "is-arrayish@npm:0.2.1"
   checksum: eef4417e3c10e60e2c810b6084942b3ead455af16c4509959a27e490e7aee87cfb3f38e01bbde92220b528a0ee1a18d52b787e1458ee86174d8c7f0e58cd488f
+  languageName: node
+  linkType: hard
+
+"is-arrayish@npm:^0.3.1":
+  version: 0.3.2
+  resolution: "is-arrayish@npm:0.3.2"
+  checksum: 977e64f54d91c8f169b59afcd80ff19227e9f5c791fa28fa2e5bce355cbaf6c2c356711b734656e80c9dd4a854dd7efcf7894402f1031dfc5de5d620775b4d5f
   languageName: node
   linkType: hard
 
@@ -12367,6 +12520,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "layer-list@workspace:."
   dependencies:
+    "@arcgis/core": ^4.23.1
     "@babel/core": ^7.17.7
     "@babel/eslint-parser": ^7.17.0
     "@babel/plugin-proposal-private-methods": ^7.16.11
@@ -12590,10 +12744,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash-es@npm:4.17.21":
+  version: 4.17.21
+  resolution: "lodash-es@npm:4.17.21"
+  checksum: 05cbffad6e2adbb331a4e16fbd826e7faee403a1a04873b82b42c0f22090f280839f85b95393f487c1303c8a3d2a010048bf06151a6cbe03eee4d388fb0a12d2
+  languageName: node
+  linkType: hard
+
 "lodash.debounce@npm:^4.0.8":
   version: 4.0.8
   resolution: "lodash.debounce@npm:4.0.8"
   checksum: a3f527d22c548f43ae31c861ada88b2637eb48ac6aa3eb56e82d44917971b8aa96fbb37aa60efea674dc4ee8c42074f90f7b1f772e9db375435f6c83a19b3bc6
+  languageName: node
+  linkType: hard
+
+"lodash.isplainobject@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "lodash.isplainobject@npm:4.0.6"
+  checksum: 29c6351f281e0d9a1d58f1a4c8f4400924b4c79f18dfc4613624d7d54784df07efaff97c1ff2659f3e085ecf4fff493300adc4837553104cef2634110b0d5337
   languageName: node
   linkType: hard
 
@@ -12684,6 +12852,13 @@ __metadata:
   version: 7.6.0
   resolution: "lru-cache@npm:7.6.0"
   checksum: bfc0bf531cb6030faabf9ae374d5f2a05ce147035a9d0d1fb44afc6e8106205c8a0ea37d6dcf652829e895bb0df26a485d8cc2f10caf259d045549df87be737c
+  languageName: node
+  linkType: hard
+
+"luxon@npm:~2.3.1":
+  version: 2.3.1
+  resolution: "luxon@npm:2.3.1"
+  checksum: ce5eec873a0172a0956618531e28010e8d8319a8b3a836b893d0f92239413a1fc5f77841ca24988e27bd61e8b2748e160e9dfcb13e92d7f031c1e31ad1c8ae91
   languageName: node
   linkType: hard
 
@@ -16986,6 +17161,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"simple-swizzle@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "simple-swizzle@npm:0.2.2"
+  dependencies:
+    is-arrayish: ^0.3.1
+  checksum: a7f3f2ab5c76c4472d5c578df892e857323e452d9f392e1b5cf74b74db66e6294a1e1b8b390b519fa1b96b5b613f2a37db6cffef52c3f1f8f3c5ea64eb2d54c0
+  languageName: node
+  linkType: hard
+
 "sisteransi@npm:^1.0.5":
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
@@ -17086,6 +17270,13 @@ __metadata:
     ip: ^1.1.5
     smart-buffer: ^4.2.0
   checksum: dd9194293059d737759d5c69273850ad4149f448426249325c4bea0e340d1cf3d266c3b022694b0dcf5d31f759de23657244c481fc1e8322add80b7985c36b5e
+  languageName: node
+  linkType: hard
+
+"sortablejs@npm:1.14.0, sortablejs@npm:~1.14.0":
+  version: 1.14.0
+  resolution: "sortablejs@npm:1.14.0"
+  checksum: 7b9d2cbb0331f3f259b8703a17174ff46a941b6d59c77c75ca05a5bd484bf2b409a9c1d21344f9c933939880450803b254825c7c7d7f88034e8c7e675420b389
   languageName: node
   linkType: hard
 
@@ -17802,6 +17993,13 @@ __metadata:
   version: 2.0.15
   resolution: "synchronous-promise@npm:2.0.15"
   checksum: 6079a6acd37d02eb76f250dc7ce09009151744901b320a8cfbba056b015c3d7cbf4e7467458f2d27c6393634f68521b241ea9e35fd9640f8fb59342740550472
+  languageName: node
+  linkType: hard
+
+"tabbable@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "tabbable@npm:5.2.1"
+  checksum: d26e9eeb880c4c78b59244bac2c931ad46f6c64a01e5c15ba6da348dc86442222912733846a9e63373342a81fa15d4afb31267606b38431510d10b0fb9ec9bba
   languageName: node
   linkType: hard
 
@@ -19644,6 +19842,18 @@ __metadata:
   version: 2.2.0
   resolution: "xmlchars@npm:2.2.0"
   checksum: 8c70ac94070ccca03f47a81fcce3b271bd1f37a591bf5424e787ae313fcb9c212f5f6786e1fa82076a2c632c0141552babcd85698c437506dfa6ae2d58723062
+  languageName: node
+  linkType: hard
+
+"xss@npm:^1.0.10":
+  version: 1.0.11
+  resolution: "xss@npm:1.0.11"
+  dependencies:
+    commander: ^2.20.3
+    cssfilter: 0.0.10
+  bin:
+    xss: bin/xss
+  checksum: 86104fe3c0e4e32912835b369a95d47aff140f996a0f3bd2833750c974c56359e91e87faf779077608f8baaec643662e6222f9f348be52f74b17432eeee6bfdf
   languageName: node
   linkType: hard
 

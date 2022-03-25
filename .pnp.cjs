@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@arcgis/core", "npm:4.23.1"],\
             ["@babel/core", "npm:7.17.7"],\
             ["@babel/eslint-parser", "virtual:c079f75ec5867c0f3e9899716ea4979e87dc7a489b2a7c32e94e8bc2882cb9cec7f2b533aa9a0bdec9000804bebb99da285a2e01bb0d20e7676347b1cf92ba17#npm:7.17.0"],\
             ["@babel/plugin-proposal-private-methods", "virtual:a9a19b630a588155c92f4ae8a8db8144917ee83e3cd36bb76901eb84a4f5c22dc9e3132b483ed08b52ebbd0b97f69550387746aa970daf04db052b2bb054ab12#npm:7.16.11"],\
@@ -109,6 +110,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["@a11y/focus-trap", [\
+        ["npm:1.0.5", {\
+          "packageLocation": "./.yarn/cache/@a11y-focus-trap-npm-1.0.5-d88b080e60-aa5dbdcbfa.zip/node_modules/@a11y/focus-trap/",\
+          "packageDependencies": [\
+            ["@a11y/focus-trap", "npm:1.0.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@ampproject/remapping", [\
         ["npm:2.1.2", {\
           "packageLocation": "./.yarn/cache/@ampproject-remapping-npm-2.1.2-d1536e36d6-e023f92cdd.zip/node_modules/@ampproject/remapping/",\
@@ -140,6 +150,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/ajv",\
             "ajv"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@arcgis/core", [\
+        ["npm:4.23.1", {\
+          "packageLocation": "./.yarn/cache/@arcgis-core-npm-4.23.1-83fc082c9d-7334e7093d.zip/node_modules/@arcgis/core/",\
+          "packageDependencies": [\
+            ["@arcgis/core", "npm:4.23.1"],\
+            ["@esri/arcgis-html-sanitizer", "npm:2.9.0"],\
+            ["@esri/calcite-colors", "npm:6.0.1"],\
+            ["@esri/calcite-components", "npm:1.0.0-beta.77"],\
+            ["@popperjs/core", "npm:2.11.4"],\
+            ["focus-trap", "npm:6.7.3"],\
+            ["luxon", "npm:2.3.1"],\
+            ["sortablejs", "npm:1.14.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4525,6 +4551,43 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@esri/arcgis-html-sanitizer", [\
+        ["npm:2.9.0", {\
+          "packageLocation": "./.yarn/cache/@esri-arcgis-html-sanitizer-npm-2.9.0-099dd860e8-28fc1f0212.zip/node_modules/@esri/arcgis-html-sanitizer/",\
+          "packageDependencies": [\
+            ["@esri/arcgis-html-sanitizer", "npm:2.9.0"],\
+            ["lodash.isplainobject", "npm:4.0.6"],\
+            ["xss", "npm:1.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@esri/calcite-colors", [\
+        ["npm:6.0.1", {\
+          "packageLocation": "./.yarn/cache/@esri-calcite-colors-npm-6.0.1-4c2a9a5a41-09033f4a3c.zip/node_modules/@esri/calcite-colors/",\
+          "packageDependencies": [\
+            ["@esri/calcite-colors", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@esri/calcite-components", [\
+        ["npm:1.0.0-beta.77", {\
+          "packageLocation": "./.yarn/cache/@esri-calcite-components-npm-1.0.0-beta.77-f73413a4c7-44a0fe971c.zip/node_modules/@esri/calcite-components/",\
+          "packageDependencies": [\
+            ["@esri/calcite-components", "npm:1.0.0-beta.77"],\
+            ["@a11y/focus-trap", "npm:1.0.5"],\
+            ["@popperjs/core", "npm:2.11.2"],\
+            ["@stencil/core", "npm:2.13.0"],\
+            ["@types/color", "npm:3.0.3"],\
+            ["color", "npm:4.2.0"],\
+            ["form-request-submit-polyfill", "npm:2.0.0"],\
+            ["lodash-es", "npm:4.17.21"],\
+            ["sortablejs", "npm:1.14.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@gar/promisify", [\
         ["npm:1.1.3", {\
           "packageLocation": "./.yarn/cache/@gar-promisify-npm-1.1.3-ac1a325862-4059f790e2.zip/node_modules/@gar/promisify/",\
@@ -5146,6 +5209,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@popperjs/core", [\
+        ["npm:2.11.2", {\
+          "packageLocation": "./.yarn/cache/@popperjs-core-npm-2.11.2-5358ac2a25-5695bf020e.zip/node_modules/@popperjs/core/",\
+          "packageDependencies": [\
+            ["@popperjs/core", "npm:2.11.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.11.4", {\
+          "packageLocation": "./.yarn/cache/@popperjs-core-npm-2.11.4-aced735dab-36168d274a.zip/node_modules/@popperjs/core/",\
+          "packageDependencies": [\
+            ["@popperjs/core", "npm:2.11.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@redux-devtools/extension", [\
         ["npm:3.2.2", {\
           "packageLocation": "./.yarn/cache/@redux-devtools-extension-npm-3.2.2-87ff18ef34-f7668cc72f.zip/node_modules/@redux-devtools/extension/",\
@@ -5329,6 +5408,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@sinonjs/fake-timers", "npm:8.1.0"],\
             ["@sinonjs/commons", "npm:1.8.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@stencil/core", [\
+        ["npm:2.13.0", {\
+          "packageLocation": "./.yarn/cache/@stencil-core-npm-2.13.0-d1b9d67a45-9ac7fdb7fa.zip/node_modules/@stencil/core/",\
+          "packageDependencies": [\
+            ["@stencil/core", "npm:2.13.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7923,6 +8011,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/bonjour", "npm:3.5.10"],\
             ["@types/node", "npm:17.0.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/color", [\
+        ["npm:3.0.3", {\
+          "packageLocation": "./.yarn/cache/@types-color-npm-3.0.3-dfc797f0a3-4a54a6eca6.zip/node_modules/@types/color/",\
+          "packageDependencies": [\
+            ["@types/color", "npm:3.0.3"],\
+            ["@types/color-convert", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/color-convert", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/@types-color-convert-npm-2.0.0-f59f3c146a-027b68665d.zip/node_modules/@types/color-convert/",\
+          "packageDependencies": [\
+            ["@types/color-convert", "npm:2.0.0"],\
+            ["@types/color-name", "npm:1.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/color-name", [\
+        ["npm:1.1.1", {\
+          "packageLocation": "./.yarn/cache/@types-color-name-npm-1.1.1-00b0925070-b71fcad728.zip/node_modules/@types/color-name/",\
+          "packageDependencies": [\
+            ["@types/color-name", "npm:1.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11594,6 +11711,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["color", [\
+        ["npm:4.2.0", {\
+          "packageLocation": "./.yarn/cache/color-npm-4.2.0-ea42aa584e-a5e7d8e8b4.zip/node_modules/color/",\
+          "packageDependencies": [\
+            ["color", "npm:4.2.0"],\
+            ["color-convert", "npm:2.0.1"],\
+            ["color-string", "npm:1.9.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["color-convert", [\
         ["npm:1.9.3", {\
           "packageLocation": "./.yarn/cache/color-convert-npm-1.9.3-1fe690075e-fd7a64a17c.zip/node_modules/color-convert/",\
@@ -11624,6 +11752,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/color-name-npm-1.1.4-025792b0ea-b044585952.zip/node_modules/color-name/",\
           "packageDependencies": [\
             ["color-name", "npm:1.1.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["color-string", [\
+        ["npm:1.9.0", {\
+          "packageLocation": "./.yarn/cache/color-string-npm-1.9.0-75382c0441-93c6678b84.zip/node_modules/color-string/",\
+          "packageDependencies": [\
+            ["color-string", "npm:1.9.0"],\
+            ["color-name", "npm:1.1.4"],\
+            ["simple-swizzle", "npm:0.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12469,6 +12608,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/cssesc-npm-3.0.0-15ec56f86f-f8c4ababff.zip/node_modules/cssesc/",\
           "packageDependencies": [\
             ["cssesc", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cssfilter", [\
+        ["npm:0.0.10", {\
+          "packageLocation": "./.yarn/cache/cssfilter-npm-0.0.10-28e06ce546-bc2c52bbb3.zip/node_modules/cssfilter/",\
+          "packageDependencies": [\
+            ["cssfilter", "npm:0.0.10"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14775,6 +14923,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["focus-trap", [\
+        ["npm:6.7.3", {\
+          "packageLocation": "./.yarn/cache/focus-trap-npm-6.7.3-a6c6ae61b8-900c8fe94a.zip/node_modules/focus-trap/",\
+          "packageDependencies": [\
+            ["focus-trap", "npm:6.7.3"],\
+            ["tabbable", "npm:5.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["follow-redirects", [\
         ["npm:1.14.9", {\
           "packageLocation": "./.yarn/cache/follow-redirects-npm-1.14.9-522f191631-f5982e0eb4.zip/node_modules/follow-redirects/",\
@@ -15025,6 +15183,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["asynckit", "npm:0.4.0"],\
             ["combined-stream", "npm:1.0.8"],\
             ["mime-types", "npm:2.1.35"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["form-request-submit-polyfill", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/form-request-submit-polyfill-npm-2.0.0-19305e2437-c6a6365599.zip/node_modules/form-request-submit-polyfill/",\
+          "packageDependencies": [\
+            ["form-request-submit-polyfill", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16475,6 +16642,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-arrayish-npm-0.2.1-23927dfb15-eef4417e3c.zip/node_modules/is-arrayish/",\
           "packageDependencies": [\
             ["is-arrayish", "npm:0.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.3.2", {\
+          "packageLocation": "./.yarn/cache/is-arrayish-npm-0.3.2-f856180f79-977e64f54d.zip/node_modules/is-arrayish/",\
+          "packageDependencies": [\
+            ["is-arrayish", "npm:0.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18135,6 +18309,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["layer-list", "workspace:."],\
+            ["@arcgis/core", "npm:4.23.1"],\
             ["@babel/core", "npm:7.17.7"],\
             ["@babel/eslint-parser", "virtual:c079f75ec5867c0f3e9899716ea4979e87dc7a489b2a7c32e94e8bc2882cb9cec7f2b533aa9a0bdec9000804bebb99da285a2e01bb0d20e7676347b1cf92ba17#npm:7.17.0"],\
             ["@babel/plugin-proposal-private-methods", "virtual:a9a19b630a588155c92f4ae8a8db8144917ee83e3cd36bb76901eb84a4f5c22dc9e3132b483ed08b52ebbd0b97f69550387746aa970daf04db052b2bb054ab12#npm:7.16.11"],\
@@ -18376,11 +18551,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash-es", [\
+        ["npm:4.17.21", {\
+          "packageLocation": "./.yarn/cache/lodash-es-npm-4.17.21-b45832dfce-05cbffad6e.zip/node_modules/lodash-es/",\
+          "packageDependencies": [\
+            ["lodash-es", "npm:4.17.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.debounce", [\
         ["npm:4.0.8", {\
           "packageLocation": "./.yarn/cache/lodash.debounce-npm-4.0.8-f1d6e09799-a3f527d22c.zip/node_modules/lodash.debounce/",\
           "packageDependencies": [\
             ["lodash.debounce", "npm:4.0.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.isplainobject", [\
+        ["npm:4.0.6", {\
+          "packageLocation": "./.yarn/cache/lodash.isplainobject-npm-4.0.6-d73937742f-29c6351f28.zip/node_modules/lodash.isplainobject/",\
+          "packageDependencies": [\
+            ["lodash.isplainobject", "npm:4.0.6"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18473,6 +18666,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lru-cache-npm-7.6.0-4d5c5e38a1-bfc0bf531c.zip/node_modules/lru-cache/",\
           "packageDependencies": [\
             ["lru-cache", "npm:7.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["luxon", [\
+        ["npm:2.3.1", {\
+          "packageLocation": "./.yarn/cache/luxon-npm-2.3.1-5e98793c95-ce5eec873a.zip/node_modules/luxon/",\
+          "packageDependencies": [\
+            ["luxon", "npm:2.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -24060,6 +24262,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["simple-swizzle", [\
+        ["npm:0.2.2", {\
+          "packageLocation": "./.yarn/cache/simple-swizzle-npm-0.2.2-8dee37fad1-a7f3f2ab5c.zip/node_modules/simple-swizzle/",\
+          "packageDependencies": [\
+            ["simple-swizzle", "npm:0.2.2"],\
+            ["is-arrayish", "npm:0.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["sisteransi", [\
         ["npm:1.0.5", {\
           "packageLocation": "./.yarn/cache/sisteransi-npm-1.0.5-af60cc0cfa-aba6438f46.zip/node_modules/sisteransi/",\
@@ -24171,6 +24383,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["agent-base", "npm:6.0.2"],\
             ["debug", "virtual:c2bff3e67180802999655a22d390062982690e911b9d9225c258f3b25e7409f3867b2682c16232b77415f560a09d05a95042dc512a5b8c566c42bbbed88b0bbc#npm:4.3.3"],\
             ["socks", "npm:2.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sortablejs", [\
+        ["npm:1.14.0", {\
+          "packageLocation": "./.yarn/cache/sortablejs-npm-1.14.0-77f80432c4-7b9d2cbb03.zip/node_modules/sortablejs/",\
+          "packageDependencies": [\
+            ["sortablejs", "npm:1.14.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -25023,6 +25244,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/synchronous-promise-npm-2.0.15-5311c7e3c6-6079a6acd3.zip/node_modules/synchronous-promise/",\
           "packageDependencies": [\
             ["synchronous-promise", "npm:2.0.15"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["tabbable", [\
+        ["npm:5.2.1", {\
+          "packageLocation": "./.yarn/cache/tabbable-npm-5.2.1-6c5c4b34fa-d26e9eeb88.zip/node_modules/tabbable/",\
+          "packageDependencies": [\
+            ["tabbable", "npm:5.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -27228,6 +27458,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/xmlchars-npm-2.2.0-8b78f0f5e4-8c70ac9407.zip/node_modules/xmlchars/",\
           "packageDependencies": [\
             ["xmlchars", "npm:2.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["xss", [\
+        ["npm:1.0.11", {\
+          "packageLocation": "./.yarn/cache/xss-npm-1.0.11-a8d30aee9c-86104fe3c0.zip/node_modules/xss/",\
+          "packageDependencies": [\
+            ["xss", "npm:1.0.11"],\
+            ["commander", "npm:2.20.3"],\
+            ["cssfilter", "npm:0.0.10"]\
           ],\
           "linkType": "HARD"\
         }]\

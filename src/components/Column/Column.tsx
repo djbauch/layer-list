@@ -17,7 +17,7 @@ const Column: FC<ColumnProps> = ({text}: ColumnProps) => {
 
   return(<div className={styles.Column}>
     <ColumnContainer>
-      <ColumnLabel>{text}</ColumnLabel>
+      <ColumnLabel>{text}&nbsp;<span className="esri-icon-layers esri-layers-list"></span></ColumnLabel>
       {layers.map((layerDesc, layerId) => (
         <LayerCard {...layerDesc} key={layerId}/>
       ))}

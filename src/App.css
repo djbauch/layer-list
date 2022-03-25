@@ -36,3 +36,114 @@
     transform: rotate(360deg);
   }
 }
+
+html,
+body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+body {
+  display: grid;
+  grid-template-areas: "view panel";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+}
+#view {
+  grid-area: view;
+  background-color: #ffffff;
+}
+.search-panel {
+  grid-area: panel;
+  max-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content max-content 1fr;
+  background-color: #f5f5f5 !important;
+  padding: 15px 15px;
+}
+.search-panel__results {
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  background-color: white;
+}
+.esri-search__input-container {
+  border: solid 1px lightgray;
+  margin-bottom: 5px;
+}
+.esri-search__input-container .esri-search__search-button {
+  border: none;
+  width: 36px;
+}
+.search-panel__filter-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.search-panel .esri-select {
+  font-family: 'Avenir Next';
+  font-size: 1em;
+  margin: 5px 10px;
+}
+.search-panel__filter-radio {
+  margin: 0px 5px 1px 8px;
+}
+.search-panel .esri-select:last-child {
+  margin-right: 0;
+  min-width: 135px;
+}
+.esri-view .esri-basemap-gallery__item-container {
+  flex-flow: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: start;
+}
+.esri-basemap-gallery__item {
+  flex: none;
+}
+.esri-basemap-gallery__item-container .esri-basemap-gallery__item-thumbnail {
+  height: 84px;
+  width: 84px;
+}
+.esri-basemap-gallery__item-container .esri-basemap-gallery__item:first-child {
+  margin-top: 0;
+}
+.esri-basemap-gallery__item-container .esri-basemap-gallery__item:hover,
+.esri-basemap-gallery__item-container .esri-basemap-gallery__item:focus,
+.esri-basemap-gallery__item--selected {
+  background-color: #e2f1fb;
+}
+.file-panel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+}
+.file-button  {
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  padding-top: 5px;
+  border-radius: 5px;
+  border: 1px #c1c1c1 solid;
+  background-color: #ffffff;
+}
+.file-button > svg {
+  width: 80%;
+}
+.file-button:hover,
+.file-button:focus {
+  background-color: #e2f1fb;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fade-in .75s linear .01s 1;
+}
